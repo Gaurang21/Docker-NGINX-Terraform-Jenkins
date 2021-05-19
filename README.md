@@ -11,3 +11,9 @@ docker build --tag website .
 ```
 docker run --publish 80:80 website
 ```
+
+3. To run website using docker compose. Docker compose helps to configure all of the application's service dependencies (databases, queues, caches, web service APIs, etc).
+
+```
+docker-compose up
+```
