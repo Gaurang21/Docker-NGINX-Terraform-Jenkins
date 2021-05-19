@@ -1,2 +1,13 @@
 # Docker-NGINX-Terraform-Jenkins
-Run NGINX webserver inside Docker container.
+
+1. Build docker container using Dockerfile. --tag is used to name the docker container.
+
+```
+docker build --tag website .
+```
+
+2. Port 80 is exposed in the docker file. To run the website in docker container on port 80 use the below command. The website will run on localhost:80
+
+```
+docker run --publish 80:80 website
+```
