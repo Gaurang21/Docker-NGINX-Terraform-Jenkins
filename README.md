@@ -27,3 +27,12 @@ This command will install rspec, capybara and run unit test on the website. It s
 
 ![Screenshot (130)](https://user-images.githubusercontent.com/38041438/118767978-4c6d3380-b833-11eb-85c5-8695bd987955.png)
 
+5. Build and run Terraform
+
+```
+docker-compose build terraform
+```
+```
+docker run --rm terraform
+```
+
