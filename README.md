@@ -62,4 +62,7 @@ docker-compose run --rm --entrypoint aws aws
 #Upload
 docker-compose run --rm --entrypoint aws aws s3 cp --recursive website/ s3://explorecalifornia.org1
 ```
-
+```
+#Use this command to see the site address and you can use the address on a browser
+docker-compose run --rm terraform output
+```
