@@ -66,3 +66,8 @@ docker-compose run --rm --entrypoint aws aws s3 cp --recursive website/ s3://exp
 #Use this command to see the site address and you can use the address on a browser
 docker-compose run --rm terraform output
 ```
+
+8. Run Jenkins on Docker
+```
+docker-compose up jenkins
+```
