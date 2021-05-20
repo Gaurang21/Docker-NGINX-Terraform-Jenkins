@@ -52,3 +52,15 @@ Apply changes to S3
 ```
 docker-compose run --rm terraform apply
 ```
+
+7. Upload website to S3
+  Compose AWS
+  ```
+  docker-compose run --rm --entrypoint aws aws
+  ```
+  
+  Upload
+  ```
+  docker-compose run --rm --entrypoint aws aws s3 cp --recursive website/ s3://explorecalifornia.org1
+  ```
+
