@@ -37,30 +37,29 @@ docker run --rm terraform
 ```
 
 6. Steps to create s3 Bucket using Terraform. Note: Update AWS_ACCESS_KEY AND AWS_SECRET_ACCESS_KEY in docker-compose.yml file. My keys are disabled so it won't work.
-
-Initialize bucket
 ```
+#Initialize bucket
 docker-compose run --rm terraform init
 ```
-
-Check plan
 ```
+#Check plan
 docker-compose run --rm terraform plan
 ```
-
-Apply changes to S3
 ```
+#Apply changes to S3
 docker-compose run --rm terraform apply
 ```
+  Output should look like this
+  ![Screenshot (132)](https://user-images.githubusercontent.com/38041438/118906517-c7395b80-b8d2-11eb-87e3-a00a63b21695.png)
+  
 
 7. Upload website to S3
-  Compose AWS
-  ```
-  docker-compose run --rm --entrypoint aws aws
-  ```
-  
-  Upload
-  ```
-  docker-compose run --rm --entrypoint aws aws s3 cp --recursive website/ s3://explorecalifornia.org1
-  ```
+```
+#Compose AWS
+docker-compose run --rm --entrypoint aws aws
+```
+```
+#Upload
+docker-compose run --rm --entrypoint aws aws s3 cp --recursive website/ s3://explorecalifornia.org1
+```
 
